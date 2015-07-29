@@ -1,0 +1,19 @@
+{
+  "name": "stylus-case",
+  "version": "0.0.0",
+  "description": "CASE --- *Safety first...*",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-marquez/CASE.git"
+  },
+  "author": "https://github.com/a-marquez",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/a-marquez/CASE/issues"
+  },
+  "homepage": "https://github.com/a-marquez/CASE#readme"
+}
