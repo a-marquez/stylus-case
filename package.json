@@ -4,7 +4,8 @@
   "description": "CASE --- *Safety first...*",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "mkdir build && stylus src/app.styl -o build/",
+    "build:watch": "npm run stylus -- -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/a-marquez/CASE/issues"
   },
-  "homepage": "https://github.com/a-marquez/CASE#readme"
+  "homepage": "https://github.com/a-marquez/CASE#readme",
+  "dependencies": {
+    "stylus": "^0.52.0"
+  }
 }
