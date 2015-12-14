@@ -44,6 +44,35 @@
 .table-cell
     display table-cell
 
+// flex
+
+.flex
+    display flex
+
+.flex-row
+    flex-direction row
+
+.flex-column
+    flex-direction column
+
+.flex-grow-1
+    flex-grow 1
+
+.flex-no-shrink
+    flex-shrink 0
+
+.flex-justify-around
+    justify-content space-around
+
+.flex-justify-around
+    justify-content space-around
+
+.flex-justify-between
+    justify-content space-between
+
+.flex-items-end
+    align-items flex-end
+
 // box model
 
 .border-box
@@ -61,28 +90,18 @@
 .no-wide, .no-right
     right 0px
 
-.no-margin
-    cardinal-generator('margin', 0px)
-
-.margin
-    cardinal-generator('margin', 1em)
-
-    &--small
-        cardinal-generator('margin', .5em)
-
-.no-padding
-    cardinal-generator('padding', 0px)
-
-.padding
-    cardinal-generator('padding', 1em)
-
-    &--small
-        cardinal-generator('padding', .5em)
-
-// table model
-
 .no-border-spacing
     border-spacing 0
+
+for property in 'margin' 'padding'
+    .no-{property}
+       cardinal-generator(property, 0px)
+
+    .{property}
+        cardinal-generator(property, 1em)
+
+        &--small
+            cardinal-generator(property, .5em)
 
 // sizing
 
@@ -107,7 +126,7 @@
     &:hover, &:active, &:hover, &:focus
         outline 1px solid orange
 
-for key, value in colors
+for key, value in $colors
     .text-{key}
         color value
 
@@ -118,11 +137,6 @@ for key, value in colors
 
 .clearfix
     overflow auto
-
-for key, value in mq
-    .mq-hide--{key}
-        @media value
-            display none
 
 .pointer
     cursor pointer
@@ -144,6 +158,11 @@ for key, value in mq
     overflow hidden
     text-overflow ellipsis
 
-for key, value in z-indices
+for key, value in $mqs
+    .mq-hide--{key}
+        @media value
+            display none
+
+for key, value in $z-indices
     .z-index-{key}
         z-index value
