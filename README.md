@@ -1,26 +1,32 @@
 CASE
 ---
-*Safety first...*
+*Safety first, Cooper*
 
 - Intro
-	- unassuming flexible stylus boilerplate
-	- NOT an API, (TODO: add example apis like kouto-swiss)
-	- collection of well-thought out organisations as suggestions
-	- includes helpful extras that are completely optional & modular
+  - flexible stylus api/boilerplate
+  - categorised files
+  - includes minimal but useful extras, can be ommitted easily in main file
+  - inspirations: kouto-swiss, milligram
+  - use cases:
+    - as boilerplate - for full projects or prototypes
+    - as api
 - Installation
-	- npm install
-	- bower install
+  - npm install
 - Usage
-	- Normalize.css recommendation
-	- autoprefix
-	- use as absolute boilerplate or import into existing setup
+  - as boilerplate:
+    - cd project
+    - mkdir css
+    - git clone --depth=1 git@github.com:a-marquez/CASE.git
+    - cp -r CASE/src/* ./css && rm -rf CASE
+  - as api:
+    - TODO
 - Philosophy
-	- reusability
-	- trasnparency
-	- explicitness
-	- atomic/bem/oocss/smacss
-		- explanatory links
+  - reusability
+  - transparency
+  - obvious naming
+  - low specificity
+  - atomic/bem/oocss/smacss
+    - explanatory links
 - Todos
-- Contributing
 - License
 - Changelog

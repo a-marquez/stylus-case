@@ -1,168 +1,168 @@
 // alignment
 
 .text-left
-    text-align left
+  text-align left
 
 .text-right
-    text-align right
+  text-align right
 
 .text-center
-    text-align center
+  text-align center
 
 .vertical-middle
-    vertical-align middle
+  vertical-align middle
 
 .vertical-sub
-    vertical-align sub
+  vertical-align sub
 
 .vertical-baseline
-    vertical-align baseline
+  vertical-align baseline
 
 .float-left
-    float left
+  float left
 
 .float-right
-    float right
+  float right
 
 // display
 
 .absolute
-    position absolute
+  position absolute
 
 .relative
-    position relative
+  position relative
 
 .inline-block
-    display inline-block
+  display inline-block
 
 .table
-    display table
+  display table
 
 .table-row
-    display table-row
+  display table-row
 
 .table-cell
-    display table-cell
+  display table-cell
 
 // flex
 
 .flex
-    display flex
+  display flex
 
 .flex-row
-    flex-direction row
+  flex-direction row
 
 .flex-column
-    flex-direction column
+  flex-direction column
 
 .flex-grow-1
-    flex-grow 1
+  flex-grow 1
 
 .flex-no-shrink
-    flex-shrink 0
+  flex-shrink 0
 
 .flex-justify-around
-    justify-content space-around
-
-.flex-justify-around
-    justify-content space-around
+  justify-content space-around
 
 .flex-justify-between
-    justify-content space-between
+  justify-content space-between
+
+.flex-justify-evenly
+  justify-content space-evenly
 
 .flex-items-end
-    align-items flex-end
+  align-items flex-end
 
 // box model
 
 .border-box
-    box-sizing border-box
+  box-sizing border-box
 
 .no-long, .no-top
-    top 0px
+  top 0px
 
 .no-long, .no-bottom
-    bottom 0px
+  bottom 0px
 
 .no-wide, .no-left
-    left 0px
+  left 0px
 
 .no-wide, .no-right
-    right 0px
+  right 0px
 
 .no-border-spacing
-    border-spacing 0
+  border-spacing 0
 
 for property in 'margin' 'padding'
-    .no-{property}
-       cardinal-generator(property, 0px)
+  .no-{property}
+    cardinal-generator(property, 0px)
 
-    .{property}
-        cardinal-generator(property, 1em)
+  .{property}
+    cardinal-generator(property, 1em)
 
-        &--small
-            cardinal-generator(property, .5em)
+    &--small
+      cardinal-generator(property, .5em)
 
 // sizing
 
 .fill
-    &, &__long
-        height 100%
-    &, &__wide
-       width 100%
+  &, &__long
+    height 100%
+  &, &__wide
+    width 100%
 
-    &--50p
-        &, &__long
-            height 50%
-        &, &__wide
-            width 50%
+  &--50p
+    &, &__long
+      height 50%
+    &, &__wide
+      width 50%
 
 // color
 
 .text-inherit-color
-    color inherit
+  color inherit
 
 .feedback-outline-orange
-    &:hover, &:active, &:hover, &:focus
-        outline 1px solid orange
+  &:hover, &:active, &:hover, &:focus
+    outline 1px solid orange
 
 for key, value in $colors
-    .text-{key}
-        color value
+  .text-{key}
+    color value
 
-    .back-{key}
-        background-color value
+  .back-{key}
+    background-color value
 
 // miscellaneous
 
 .clearfix
-    overflow auto
+  overflow auto
 
 .pointer
-    cursor pointer
+  cursor pointer
 
 .no-wrap
-    white-space nowrap
+  white-space nowrap
 
 .no-border
-    border none
+  border none
 
 .overflow-auto
-    overflow auto
+  overflow auto
 
 .overflow-visible
-    overflow visible
+  overflow visible
 
 .ellipsis
-    white-space nowrap
-    overflow hidden
-    text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
 
 for key, value in $mqs
-    .mq-hide--{key}
-        @media value
-            display none
+  .mq-hide--{key}
+    @media value
+      display none
 
 for key, value in $z-indices
-    .z-index-{key}
-        z-index value
+  .z-index-{key}
+    z-index value
