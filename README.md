@@ -19,7 +19,7 @@ CASE
     - git clone --depth=1 git@github.com:a-marquez/CASE.git
     - cp -r CASE/src/* ./css && rm -rf CASE
   - as api:
-    - TODO
+    - TODO: expose appropriate functionality similarly to nib and foundation
 - Philosophy
   - reusability
   - transparency
