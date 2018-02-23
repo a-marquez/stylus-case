@@ -3,30 +3,23 @@ CASE
 *Safety first, Cooper*
 
 - Intro
-  - flexible stylus api/boilerplate
-  - categorised files
-  - includes minimal but useful extras, can be ommitted easily in main file
+  - flexible stylus api
+  - includes minimal and useful utilities, can be required all at once or piecemeal
   - inspirations: kouto-swiss, milligram
   - use cases:
-    - as boilerplate - for full projects or prototypes
-    - as api
+    - TODO: examples
 - Installation
-  - npm install
+  - npm install github:amarquez/stylus-case
 - Usage
-  - as boilerplate:
-    - cd project
-    - mkdir css
-    - git clone --depth=1 git@github.com:a-marquez/CASE.git
-    - cp -r CASE/src/* ./css && rm -rf CASE
   - as api:
-    - TODO: expose appropriate functionality similarly to nib and foundation
+    - TODO: examples
+      - stylus include
+      - full api require
+      - partial api require
 - Philosophy
   - reusability
-  - transparency
-  - obvious naming
-  - low specificity
-  - atomic/bem/oocss/smacss
-    - explanatory links
+  - low specificity (shallow nesting)
+  - clarity - obvious class names anyone can start working with, minimal shorthands
+    - conscious tradeoff of legibility over convenience
 - Todos
 - License
-- Changelog
