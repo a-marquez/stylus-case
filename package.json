@@ -1,24 +1,20 @@
 {
   "name": "stylus-case",
-  "version": "0.0.0",
-  "description": "CASE --- *Safety first...*",
+  "version": "1.0.0",
+  "description": "small stylus api",
+  "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "mkdir -p build && stylus src/main.styl --include-css -o build/",
-    "build:watch": "npm run build -- -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a-marquez/CASE.git"
+    "url": "git+https://github.com/a-marquez/stylus-case.git"
   },
-  "author": "https://github.com/a-marquez",
-  "license": "WTFPL",
+  "author": "Albert Marquez github.com/a-marquez",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/a-marquez/CASE/issues"
+    "url": "https://github.com/a-marquez/stylus-case/issues"
   },
-  "homepage": "https://github.com/a-marquez/CASE#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.0",
-    "stylus": "^0.52.0"
-  }
+  "homepage": "https://github.com/a-marquez/stylus-case#readme"
 }
