@@ -14,17 +14,17 @@ $ npm install a-marquez/stylus-case
 ```
 
 ## Usage
-** Importing whole **
+**Importing whole**
 ```stylus
 @require 'case'
 ```
 
-** Importing section **
+**Importing section**
 ```stylus
 @require 'case/display'
 ```
 
-** Compilation **
+**Compilation**
 ```sh
 $ stylus main.styl --use stylus-case
 ```
