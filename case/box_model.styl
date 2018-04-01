@@ -25,5 +25,14 @@ for property in 'margin' 'padding'
   .{property}
     cardinal-generator(property, 1rem)
 
+    &--xsmall
+      cardinal-generator(property, .25rem)
+
     &--small
       cardinal-generator(property, .5rem)
+
+    &--large
+      cardinal-generator(property, 1.5rem)
+
+    &--xlarge
+      cardinal-generator(property, 2rem)
